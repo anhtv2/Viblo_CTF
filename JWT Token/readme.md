@@ -42,6 +42,7 @@ function getFiles(){
 ```
 
 Mình có check `./getflag` thì
+
 <img src = "https://user-images.githubusercontent.com/93431512/193450478-3f939786-770a-4554-a11e-badb6f104b1b.png" width="50%">
 
 Check Request kiểm tra Cookie:
