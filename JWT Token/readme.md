@@ -4,21 +4,21 @@ Adrress: http://172.104.49.143:1574/
 
 Đăng nhập với username một cách bình thường là `admin` :)))
 
-![image](https://user-images.githubusercontent.com/93431512/193450231-a8541ebb-04b1-4385-9f3c-940cc067e9cb.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193450231-a8541ebb-04b1-4385-9f3c-940cc067e9cb.png" width="50%">
 
 Và cũng như một cách bình thường khác ta upload file
 
-![image](https://user-images.githubusercontent.com/93431512/193450277-04df90a0-2892-4796-8519-bf050d271189.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193450277-04df90a0-2892-4796-8519-bf050d271189.png" width="50%">
 
-Quay trở lại trang `/` ta thấy có danh sách 1 số file đã up và nó có dạng `website/uploads/<username>/<filename>'
+Quay trở lại trang `/` ta thấy có danh sách 1 số file đã up và nó có dạng `website/uploads/<username>/<filename>`
 
-![image](https://user-images.githubusercontent.com/93431512/193450313-52fc3f5b-ae2e-4e0d-8152-85de4d99a103.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193450313-52fc3f5b-ae2e-4e0d-8152-85de4d99a103.png" width="50%">
 
 Ở đây mình nghĩ ngay đến việc up shell và ghi `hacked by tronghieu220403` nhưng mà mãi k payload được nên nghĩ cách khác =)))
 
 Để ý lại history có cái getflag.js mình vào thử
 
-![image](https://user-images.githubusercontent.com/93431512/193450418-6423eabe-25d7-4946-a5ad-feedd95d045b.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193450418-6423eabe-25d7-4946-a5ad-feedd95d045b.png" width="50%">
 
 Đoạn Javascript của nó:
 ```Javascript
@@ -42,8 +42,7 @@ function getFiles(){
 ```
 
 Mình có check `./getflag` thì
-
-![image](https://user-images.githubusercontent.com/93431512/193450478-3f939786-770a-4554-a11e-badb6f104b1b.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193450478-3f939786-770a-4554-a11e-badb6f104b1b.png" width="50%">
 
 Check Request kiểm tra Cookie:
 ```http
@@ -52,7 +51,7 @@ Cookie: token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3
 
 Đây là JWT Cookie (Đề bài là JWT Token mà), sử dụng [JWT Tool](https://token.dev)
 
-![image](https://user-images.githubusercontent.com/93431512/193450654-e6e9ca57-a3fe-43f1-9dd9-101e5893d829.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193450654-e6e9ca57-a3fe-43f1-9dd9-101e5893d829.png" width="50%">
 
 Như vậy muốn có flag ta cần đổi giá trị `approve` thành `True` 
 
@@ -62,7 +61,7 @@ Nhưng mà mọi việc đâu dễ thế, ta cần đổi giá trị nhưng mà 
 
 Vậy nếu như mình thay Pubkey thì sao nhỉ :)? rất hay trên trang Token.dev có sẵn Private và Public từ Template, sử dụng key đó luôn, bằng cách upload file pub mới lên
 
-![image](https://user-images.githubusercontent.com/93431512/193451020-685bb621-4436-49d6-aab1-322c18dc6db5.png)
+<img src = "https://user-images.githubusercontent.com/93431512/193451020-685bb621-4436-49d6-aab1-322c18dc6db5.png" width="50%">
 
 Vậy ta đã có token mới, let's check :))
 
