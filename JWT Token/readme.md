@@ -63,7 +63,7 @@ Cookie: token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3
 Đây là JWT Cookie (Đề bài là JWT Token mà), sử dụng [JWT Tool](https://token.dev)
 
 <p align="center">
-<img src = "https://user-images.githubusercontent.com/93431512/193450654-e6e9ca57-a3fe-43f1-9dd9-101e5893d829.png" width="50%">
+<img src = "https://user-images.githubusercontent.com/93431512/193450654-e6e9ca57-a3fe-43f1-9dd9-101e5893d829.png" width="100%">
 </p>
 
 Như vậy muốn có flag ta cần đổi giá trị `approve` thành `True` 
@@ -75,7 +75,7 @@ Nhưng mà mọi việc đâu dễ thế, ta cần đổi giá trị nhưng mà 
 Vậy nếu như mình thay Pubkey thì sao nhỉ :)? rất hay trên trang Token.dev có sẵn Private và Public từ Template, sử dụng key đó luôn, bằng cách upload file pub mới lên
 
 <p align="center">
-<img src = "https://user-images.githubusercontent.com/93431512/193451020-685bb621-4436-49d6-aab1-322c18dc6db5.png" width="50%">
+<img src = "https://user-images.githubusercontent.com/93431512/193451020-685bb621-4436-49d6-aab1-322c18dc6db5.png" width="100%">
 </p>
 
 Vậy ta đã có token mới, let's check :))
